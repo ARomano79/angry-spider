@@ -7,42 +7,102 @@
 
         <style>
 
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smoooth;
+
+            font-family: Poppins, 'century gothic', sans-serif;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border: 2px solid orange;
+
+            background: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
+            color: white;
+            text-align: center;
+        }
+        
+        #header {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border: 2px solid seagreen;
+        }
+
+        #nav-bar {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            border: 2px solid blue;
+            background-color: black;
+        }
+        
+        #hero {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            border: 2px solid fuchsia;
+        }
+
+            h1 {
+                margin: 0 auto;
+                padding: 0;
+                font-family: 'Lilita One', century, serif;
+                border: 2px solid green;
+                background: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+                 .h1-pt1 {
+                    font-size: 80px;
+                    letter-spacing: 0.3rem;
+                 }
+
+                .h1-pt2 {
+                    font-family: serif;
+                    font-style: italic;
+                    font-size: 42px;
+                    font-weight: 800;
+                }
+
+                .h1-pt3 {
+                font-size: 72px;
+                letter-spacing: 0.2rem;
+                }
+
+        #main {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border: 2px solid purple;
+        }
+
+        #footer {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border: 2px solid magenta;
+        }
 
 
 /*
-            * {
-    box-sizing: border-box;
-    scroll-behavior: smoooth;
-
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
-
-}
-
+            
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
-    background: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
-
-    color: white;
-    text-align: center;
     position: relative;
-    
-
-
 }
 
-header {
-    width: 100%;
-    
-}
+header {}
 
 h1 {
     font-size: 92px;
@@ -65,44 +125,28 @@ h1 {
     margin: 0 auto;
     padding: 0;
     width: 50%;
-   
   }
 
   main {
-    font-family: Poppins, 'century gothic', sans-serif;
     position: relative;
     top: 0;
-    margin: 0 auto;
-    width: 100%;
-
-
   }
 
-#hero {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-
-}
+#hero {}
 
 h2 {
-    font-family: 'Lilita One', century, serif;
+    
     position: relative;
     top: 0;
-    background-image: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     padding: 0.15rem;
     width: 50%;
     margin: 5rem auto;
-
 }
 
   .tagline, .preorder {
     font-size: 36px;
     font-style: italic;
-    
-
   }
 
   .eta-date {
@@ -127,8 +171,6 @@ h2 {
     overflow: hidden;
     width: 70%;
     margin: 1rem auto 3rem auto;
-
-
   }
 
   img {
@@ -139,27 +181,7 @@ h2 {
     margin: 1rem auto;
 
     border: 2px solid white;
-
-
-
   }
-
-.h2-pt1 {
-    font-size: 80px;
-    letter-spacing: 0.3rem;
-}
-
-.h2-pt2 {
-    font-family: serif;
-    font-style: italic;
-    font-size: 42px;
-    font-weight: 800;
-}
-
-.h2-pt3 {
-    font-size: 72px;
-    letter-spacing: 0.2rem;
-}
 
 .book-desc {
     width: 50%;
@@ -169,8 +191,6 @@ h2 {
     padding: 1rem;
     position: relative;
     top: 0;
-    
-
 }
 
 .desc-qs {
@@ -195,8 +215,6 @@ h2 {
     width: 100%;
     margin: 0 auto;
     font-weight: bold;
-
-
 }
 
 a {
@@ -220,8 +238,6 @@ a:visited {
 footer {
     position: relative;
     top: 0;
-    margin: 0 auto;
-    width: 100%;
     background-color: black;
 
 }
@@ -240,19 +256,21 @@ footer p {
     <body>
         <div id="header">
             <div id="nav-bar">
-                menu button here
+                <button>menu</button>
             </div>
             <div id="hero">
                 <h1>
-                    <span class="h2-pt1">The Angry Spider</span>
+                    <span class="h1-pt1">The Angry Spider</span>
                     <br />
-                    <span class="h2-pt2">~ who ~</span>
+                    <span class="h1-pt2">~ who ~</span>
                     <br />
-                    <span class="h2-pt3">Stole Gems</span>
+                    <span class="h1-pt3">Stole Gems</span>
 
                 </h1>
             </div>
         </div>
+
+
         <div id="main">
             <div ="coming-soon-alert">
                 <h2>
@@ -293,6 +311,7 @@ footer p {
                 &#169; 2023-2024 The Angry Spider
             </p>
         </div>
+
 
     </body>
 
