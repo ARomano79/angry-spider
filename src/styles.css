@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smoooth;
+
+    font-family: 'Poppins', 'century gothic', sans-serif;
+}
+
+:root {}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid orange;
+
+    background: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
+    color: white;
+    text-align: center;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid seagreen;
+}
+
+#nav-bar {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border: 2px solid blue;
+    background-color: black;
+}
+
+#hero {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border: 2px solid fuchsia;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lilita One', century, serif;
+    border: 2px solid green;
+    background: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h1-pt1 {
+    font-size: 80px;
+    letter-spacing: 0.3rem;
+}
+
+.h1-pt2 {
+    font-family: serif;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.h1-pt3 {
+    font-size: 72px;
+    letter-spacing: 0.2rem;
+}
+
+#coming-soon-alert {
+    background-color: black;
+    border: 2px solid firebrick;
+}
+
+h2 {
+    font-size: 92px;
+    padding: 0.3rem;
+    margin: 2rem auto 0 auto;
+    font-family: century;
+    letter-spacing: 0.4rem;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid purple;
+}
+
+p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tagline, .preorder {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.eta-date {
+    font-size: 48px;
+    padding: 0.4rem;
+    font-weight: bold;
+
+/* ADD once bg color is changed to black 
+border-top: none;
+border-bottom: 2px solid white;
+border-top: none;
+border-bottom: none;     */
+
+}
+
+.preorder {
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.book-desc {
+margin: 0 auto;
+font-size: 24px;
+font-weight: 500;
+padding: 1rem;
+}
+
+.desc-qs {
+font-size: 30px;
+font-weight: 800;
+padding: 0.25rem;
+margin: 2rem auto;
+line-height: 3.5rem;
+}
+
+.desc {
+margin: 2rem auto;
+font-size: 20px;
+}
+
+#book-info {
+margin: 1rem auto 3rem auto;
+}
+
+img {
+height: 500px;
+width: 460px;
+padding: 1rem;
+margin: 1rem auto;
+
+border: 2px solid white;
+}
+
+
+#footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    border: 2px solid magenta;
+}
+
+
+#footer p {
+padding: 0.25rem;
+margin: 0 auto;
+font-style: italic;
+}
+
+
+a {
+color: aqua;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(236, 80, 168);
+text-decoration: underline;
+}
+
+a:active {
+color: purple;
+}
+
+a:visited {
+color: darkturquoise;
+}
+
+/*
+    
+body {
+position: relative;
+}
+
+header {}
+
+h1 {
+width: 50%;
+
+/* ADD once bg color is changed to black 
+border-top: 2px solid white;
+border-bottom: none;
+border-top: none;
+border-bottom: none;     */
+/*
+}
+
+header {
+width: 50%;
+}
+
+main {
+position: relative;
+top: 0;
+}
+
+#hero {}
+
+h2 {
+position: relative;
+top: 0;
+}
+
+#book-info {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+object-fit: cover;
+gap: 1.6rem;
+overflow: hidden;
+width: 70%;
+}
+
+img {
+position: relative;
+}
+
+.book-desc {
+width: 50%;
+position: relative;
+top: 0;
+}
+
+.desc-qs {}
+
+.desc {
+position: relative;
+top: 6rem;
+}
+
+.preorder {
+position: relative;
+top: 0;
+width: 100%;
+}
+
+footer {
+position: relative;
+top: 0;
+}
+
+*/
