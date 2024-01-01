@@ -1,318 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
-        <title>The Angry Spider Who Stole Gems | Coming Soon to a retailer near you!</title>
 
-        <style>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
 
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smoooth;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-            font-family: Poppins, 'century gothic', sans-serif;
-        }
+    <link rel="stylesheet" href="./src/styles.css"> 
+    <title>The Angry Spider Who Stole Gems | Coming Soon to a retailer near you!</title>
+</head>
 
-        html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            border: 2px solid red;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            border: 2px solid orange;
-
-            background: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
-            color: white;
-            text-align: center;
-        }
-        
-        #header {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            border: 2px solid seagreen;
-        }
-
-        #nav-bar {
-            margin: 0 auto;
-            padding: 0;
-            width: 100%;
-            border: 2px solid blue;
-            background-color: black;
-        }
-        
-        #hero {
-            margin: 0 auto;
-            padding: 0;
-            width: 100%;
-            border: 2px solid fuchsia;
-        }
-
-            h1 {
-                margin: 0 auto;
-                padding: 0;
-                font-family: 'Lilita One', century, serif;
-                border: 2px solid green;
-                background: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-                 .h1-pt1 {
-                    font-size: 80px;
-                    letter-spacing: 0.3rem;
-                 }
-
-                .h1-pt2 {
-                    font-family: serif;
-                    font-style: italic;
-                    font-size: 42px;
-                    font-weight: 800;
-                }
-
-                .h1-pt3 {
-                font-size: 72px;
-                letter-spacing: 0.2rem;
-                }
-
-        #main {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            border: 2px solid purple;
-        }
-
-        #footer {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            border: 2px solid magenta;
-        }
-
-
-/*
-            
-body {
-    position: relative;
-}
-
-header {}
-
-h1 {
-    font-size: 92px;
-    width: 50%;
-    padding: 0.3rem;
-    margin: 2rem auto 0 auto;
-    text-align: center;
-    font-family: century;
-    letter-spacing: 0.4rem;
-
-    /* ADD once bg color is changed to black 
-    border-top: 2px solid white;
-       border-bottom: none;
-       border-top: none;
-       border-bottom: none;     */
-/*
-  }
-
-  header p {
-    margin: 0 auto;
-    padding: 0;
-    width: 50%;
-  }
-
-  main {
-    position: relative;
-    top: 0;
-  }
-
-#hero {}
-
-h2 {
-    
-    position: relative;
-    top: 0;
-    
-    padding: 0.15rem;
-    width: 50%;
-    margin: 5rem auto;
-}
-
-  .tagline, .preorder {
-    font-size: 36px;
-    font-style: italic;
-  }
-
-  .eta-date {
-    font-size: 48px;
-    padding: 0.4rem;
-    font-weight: bold;
-
-    /* ADD once bg color is changed to black 
-    border-top: none;
-       border-bottom: 2px solid white;
-       border-top: none;
-       border-bottom: none;     */
-/*
-  }
-
-  #book-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    object-fit: cover;
-    gap: 1.6rem;
-    overflow: hidden;
-    width: 70%;
-    margin: 1rem auto 3rem auto;
-  }
-
-  img {
-    height: 500px;
-    width: 460px;
-    padding: 1rem;
-    position: relative;
-    margin: 1rem auto;
-
-    border: 2px solid white;
-  }
-
-.book-desc {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 24px;
-    font-weight: 500;
-    padding: 1rem;
-    position: relative;
-    top: 0;
-}
-
-.desc-qs {
-    font-size: 30px;
-    font-weight: 800;
-    padding: 0.25rem;
-    margin: 2rem auto;
-
-    line-height: 3.5rem;
-}
-
-.desc {
-    margin: 2rem auto;
-    position: relative;
-    top: 6rem;
-    font-size: 20px;
-}
-
-.preorder {
-    position: relative;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-a {
-    color: aqua;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(236, 80, 168);
-    text-decoration: underline;
-}
-
-a:active {
-    color: purple;
-}
-
-a:visited {
-    color: darkturquoise;
-}
-
-footer {
-    position: relative;
-    top: 0;
-    background-color: black;
-
-}
-
-footer p {
-    padding: 0.25rem;
-    margin: 0 auto;
-    font-style: italic;
-}
-
-*/
-
-        </style>
-
-    </head>
-    <body>
-        <div id="header">
-            <div id="nav-bar">
-                <button>menu</button>
-            </div>
-            <div id="hero">
-                <h1>
-                    <span class="h1-pt1">The Angry Spider</span>
-                    <br />
-                    <span class="h1-pt2">~ who ~</span>
-                    <br />
-                    <span class="h1-pt3">Stole Gems</span>
-
-                </h1>
-            </div>
+<body>
+    <div id="header">
+        <div id="nav-bar">
+            <button>Menu</button>
         </div>
-
-
-        <div id="main">
-            <div ="coming-soon-alert">
-                <h2>
-                    Coming Soon!!
-                </h2>
-                <p class="tagline">
-                    To Bookstores and Online Retailers ...
-                </p>
-                <p class="eta-date">
-                    January 2024 (or sometime soon...)
-                </p>
-            </div>
-            <div id="book-info">
-                <p class="book-desc">
-                    <span class="desc-qs">Who is the Angry Spider?</span> 
-                    <br />
-                    <span class="desc-qs">Why is he angry?</span> 
-                     <br />
-                     <span class="desc-qs">Why did he steal gems?</span>   
-                     <br />
-                    <span class="desc">Find out why, and more... a lot more... in the first of this riveting 
-                    series by young author, Trinny B., about a spider with anger issues, and ...oh, did we mention his 
-                    love of broccoli?</span>  
-                </p>
-                <img src="src/book-cover-1st-ed.jpg" alt="Book Cover, The Angry Spider Who Stole Gems, 1st ed." width="300px"
-                    height="300px" />
-                
-    
-                <p class="preorder">
-                    Pre-order your copy today!!
-                </p>
-
-            </div>
-
+        <div id="hero">
+            <h1>
+                <span class="h1-pt1">The Angry Spider</span>
+                <br />
+                <span class="h1-pt2">~ who ~</span>
+                <br />
+                <span class="h1-pt3">Stole Gems</span>
+            </h1>
         </div>
-        <div id="footer">
-            <p>
-                &#169; 2023-2024 The Angry Spider
+    </div>
+
+    <div id="main">
+        <div id="coming-soon-alert">
+            <h2>
+                Coming Soon!!
+            </h2>
+            <p class="tagline">
+                To Bookstores and Online Retailers ...
+            </p>
+            <p class="eta-date">
+                January 2024 (or sometime soon...)
             </p>
         </div>
+        <div id="book-info">
+            <p class="book-desc">
+                <span class="desc-qs">Who is the Angry Spider?</span>
+                <br />
+                <span class="desc-qs">Why is he angry?</span>
+                <br />
+                <span class="desc-qs">Why did he steal gems?</span>
+                <br />
+                <span class="desc">Find out why, and more... a lot more... in the first of this riveting
+                    series by young author, Trinny B., about a spider with anger issues, gems, and ...oh, did we mention his
+                    love of broccoli?</span>
+            </p>
+            <img src="src/book-cover-1st-ed.jpg" alt="Book Cover, The Angry Spider Who Stole Gems, 1st ed."
+                width="300px" height="300px" />
 
+            <p class="preorder">
+                Pre-order your copy today!!
+            </p>
+        </div>
+    </div>
 
-    </body>
-
+    <div id="footer">
+        <p>
+            &#169; 2023-2024 The Angry Spider
+        </p>
+    </div>
+</body>
 </html>
