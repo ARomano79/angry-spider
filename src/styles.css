@@ -1,27 +1,43 @@
+/* Root styles */
+
 * {
     box-sizing: border-box;
     scroll-behavior: smoooth;
-
     font-family: 'Poppins', 'century gothic', sans-serif;
+    font-size: 18px;
 }
 
-:root {}
+:root {
+    --main-bg-gradient: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
+    --main-bg-solid-color: black;
+    --nav-footer-bg-color: black;
+    --main-text-color: white;
+    --h1-gradient: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));;
+    --link-default-color: aqua;
+    --link-hover-color: rgb(236, 80, 168);
+    --link-active-color: purple;
+    --link-visited-color: darkturquoise;
+    --border-color: rgba(255, 255, 255, 0.4);
+    --border-color-imgs: rgba(255, 255, 255, 0.8);
+    --border-color-nav: rgba(255, 255, 255, 0.2);
+    --border-color-footer: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Main Structural Divs/Styles */
 
 html {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid red;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid orange;
-
-    background: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
-    color: white;
+    background: var(--main-bg-gradient);
+    color: var(--main-text-color);
     text-align: center;
 }
 
@@ -29,238 +45,258 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid seagreen;
 }
 
 #nav-bar {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid blue;
-    background-color: black;
+    background-color: var(--nav-footer-bg-color);
+    border-bottom: 1px solid var(--border-color-nav);
 }
 
 #hero {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid fuchsia;
-}
-
-h1 {
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Lilita One', century, serif;
-    border: 2px solid green;
-    background: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.h1-pt1 {
-    font-size: 80px;
-    letter-spacing: 0.3rem;
-}
-
-.h1-pt2 {
-    font-family: serif;
-    font-style: italic;
-    font-size: 42px;
-    font-weight: 800;
-}
-
-.h1-pt3 {
-    font-size: 72px;
-    letter-spacing: 0.2rem;
-}
-
-#coming-soon-alert {
-    background-color: black;
-    border: 2px solid firebrick;
-}
-
-h2 {
-    font-size: 92px;
-    padding: 0.3rem;
-    margin: 2rem auto 0 auto;
-    font-family: century;
-    letter-spacing: 0.4rem;
 }
 
 #main {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid purple;
 }
 
-p {
+#coming-soon-alert {
+    margin: 3.6rem auto;
+    padding: 0.2rem;
+    background-color: var(--main-bg-solid-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#book-info {
     margin: 0 auto;
     padding: 0;
 }
 
-.tagline, .preorder {
-    font-size: 36px;
-    font-style: italic;
+#book-info-liner {
+    margin: 3.2rem auto 1.6rem auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+    object-fit: cover;
+    gap: 1.6rem;
 }
-
-.eta-date {
-    font-size: 48px;
-    padding: 0.4rem;
-    font-weight: bold;
-
-/* ADD once bg color is changed to black 
-border-top: none;
-border-bottom: 2px solid white;
-border-top: none;
-border-bottom: none;     */
-
-}
-
-.preorder {
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-.book-desc {
-margin: 0 auto;
-font-size: 24px;
-font-weight: 500;
-padding: 1rem;
-}
-
-.desc-qs {
-font-size: 30px;
-font-weight: 800;
-padding: 0.25rem;
-margin: 2rem auto;
-line-height: 3.5rem;
-}
-
-.desc {
-margin: 2rem auto;
-font-size: 20px;
-}
-
-#book-info {
-margin: 1rem auto 3rem auto;
-}
-
-img {
-height: 500px;
-width: 460px;
-padding: 1rem;
-margin: 1rem auto;
-
-border: 2px solid white;
-}
-
 
 #footer {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: black;
-    border: 2px solid magenta;
+    background-color: var(--nav-footer-bg-color);
+    border-top: 1px solid var(--border-color-footer);
 }
 
 
-#footer p {
-padding: 0.25rem;
-margin: 0 auto;
-font-style: italic;
-}
-
-
-a {
-color: aqua;
-text-decoration: none;
-}
-
-a:hover {
-color: rgb(236, 80, 168);
-text-decoration: underline;
-}
-
-a:active {
-color: purple;
-}
-
-a:visited {
-color: darkturquoise;
-}
-
-/*
-    
-body {
-position: relative;
-}
-
-header {}
+/* H1-6, Ps, associated classes */
 
 h1 {
-width: 50%;
+    margin: 1rem auto;
+    padding: 0.2rem;
+    font-family: 'Lilita One', century, serif;
+    background: var(--h1-gradient);
+    background-clip: text;
+    color: transparent;
 
-/* ADD once bg color is changed to black 
-border-top: 2px solid white;
-border-bottom: none;
-border-top: none;
-border-bottom: none;     */
-/*
 }
 
-header {
-width: 50%;
+.h1-pt1 {
+    font-size: 4.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 5.4rem;
 }
 
-main {
-position: relative;
-top: 0;
+.h1-pt1a {
+    font-size: 4.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 4.8rem;
 }
 
-#hero {}
+.h1-pt2 {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.h1-pt3 {
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.4rem;
+}
 
 h2 {
-position: relative;
-top: 0;
+    margin: 0 auto;
+    padding: 0.2rem;
+    font-family: century;
+    font-size: 3.2rem;    
+    letter-spacing: 0.1rem;
+    line-height: 3.4rem;
 }
 
-#book-info {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-object-fit: cover;
-gap: 1.6rem;
-overflow: hidden;
-width: 70%;
+p {
+    margin: 0 auto;
+    padding: 0;
+    text-shadow: 0.4rem 0.4rem 1.2rem var(--main-bg-solid-color);
 }
 
-img {
-position: relative;
+.tagline,
+.preorder {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6rem;
+}
+
+.eta-date {
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+}
+
+.smaller-italic {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .book-desc {
-width: 50%;
-position: relative;
-top: 0;
+    margin: 0 auto;
+    padding: 0;    
 }
 
-.desc-qs {}
+.desc-qs {
+    margin: 0.5rem auto;
+    padding: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
 
 .desc {
-position: relative;
-top: 6rem;
+    margin: auto 1rem;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .preorder {
-position: relative;
-top: 0;
-width: 100%;
+    margin: 1rem auto;
+    padding: 0.4rem;
+    font-weight: 600;
 }
 
-footer {
-position: relative;
-top: 0;
+#footer p {
+    margin: 0 auto;
+    padding: 0.2rem;
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
+
+/* images */
+
+img {
+    height: 20rem;
+    width: 16rem;
+    padding: 0;
+    margin: 0 auto;
+    border: 2px solid var(--border-color-imgs);
+    border-radius: 0.4rem;
+}
+
+#image-wrapper {
+    padding: 0.4rem;
+    margin: 1rem auto;
+    border: 2px solid var(--border-color-imgs);
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* nav/menu button */
+
+button {
+    font-size: 1.2rem;
+    background-color: var(--link-default-color);
+    border-radius: 0.4rem;
+}
+
+#nav-icon-dashboard {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#nav-icon-dashboard a {
+    /*  good size for fa icons ... save for now ...
+    width: 2.8rem;
+    height: 2.8rem;
+    */
+    margin: 0.5rem 1rem 0.5rem 0.1rem;
+    padding: 0.1rem;
+    text-decoration: none;
+    border: 2px solid var(--border-color);
+    border-radius: 0.4rem;
+    color: var(--main-text-color);
+    opacity: 90%;
+}
+
+#nav-icon-dashboard a:hover {
+    background-color: var(--link-hover-color);
+}
+
+/*  styles for fa icons ... save for now ...
+#nav-icon-dashboard i {
+    box-sizing: border-box;
+    margin: 0.2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
 */
+
+
+/* links */ 
+
+a {
+    color: var(--link-default-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--link-active-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
