@@ -16,19 +16,19 @@
 </head>
 
 <body>
-    <div id="header">
-
+    <header>
         <!-- NAV BAR -->
-        <div id="nav-bar">
+        <nav>
             <div id="nav-icon-dashboard">
                 <a href="" id="nav-menu">
-                    <button>Menu</button></a>
+                    <button>Menu</button>
+                </a>
             </div>
-        </div>
+        </nav>
         <!-- END NAV BAR-->
-
+       
         <!-- Hero section -->
-        <div id="hero">
+        <section id="hero">
             <h1>
                 <span class="h1-pt1a">The </span>
                 <span class="h1-pt1">Angry Spider</span>
@@ -37,13 +37,11 @@
                 <br />
                 <span class="h1-pt3">Stole Gems</span>
             </h1>
-        </div>
-    </div>
-    <!-- end Hero section -->
-
- <!-- main content area -->  
-    <div id="main">
-        <div id="coming-soon-alert">
+        </section>
+         <!-- end Hero section -->
+    </header>
+    <main>
+        <section id="coming-soon-alert">
             <h2>
                 Coming Soon!!
             </h2>
@@ -53,41 +51,114 @@
             <p class="eta-date">
                 January 2024 <span class="smaller-italic">(or sometime soon...)</span>
             </p>
-
-            <!--  ADD Email sign up here !!! use form bold to handle it -->
-        </div>
-
-        <div id="book-info">
+             <!-- use form bold to handle email alert -->
+            <form method="post" action="" class="sign-up">
+                <fieldset>Keep up with the Spider's latest antics!  
+                    <label for="sign-up-form">
+                        <input id="sign-up-form" name="sign-up-form" type="email" placeholder="(this will really work soon)" />
+                        <input id="sign-up-button" name="sign-up-form" type="submit" 
+                        value="Yes!!" />
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <section id="book-info">
             <div id="book-info-liner">
                 <div id="image-wrapper">
                     <img src="src/book-cover-1st-ed.jpg" alt="Book Cover, The Angry Spider Who Stole Gems, 1st ed."
                 width="200px" height="240px" />
                 </div>
-
-                <div class="book-desc">
-                    <p class="desc-qs">Who is the Angry Spider?</p>
-                    
-                    <p class="desc-qs">Why is he angry?</p>
-                      
-                    <p class="desc-qs">Why did he steal gems?</p>
-                    
-                    <p class="desc">Find out why, and more... a lot more... in the first of this riveting
-                    series by young author, Trinny B., about a spider with anger issues, gems, and ...oh, did we mention his
-                    love of broccoli?</p>
-                    </div>    
-    
-                   <p class="preorder">
-                <a href="mailto:a.romano2010@hotmail.com?subject=Reserve my copy, please">Pre-order</a> your copy today!!
-                </p>
-             <!-- Add pre-order sign up form here !!!   Use form bold site to activate -->
+                <div class="book-qs">
+                    <h3>Who is the Angry Spider?</h3>                    
+                    <h3>Why is he angry?</h3>    
+                    <h3>Why did he steal gems?</h3>
+                    <p class="desc">
+                        Find out why, and more... a lot more... in the first of this riveting
+                        series by young author, Trinny B., about a spider with anger issues, gems, 
+                        and ...oh, did we mention his love of broccoli?
+                    </p>
+                </div>    
             </div>
-        </div>
 
-    <div id="footer">
+            <!-- Add pre-order sign up form here !!!   Use form bold site to activate -->       
+            <form method="post" action="" class="preorder">
+                <fieldset>Pre-order your copy today! - $10.95 USD*
+                    <label for="preorder-name">Name:  
+                        <input id="preorder-name" 
+                               name="preorder-name" 
+                               type="text" 
+                               placeholder="first and last name" 
+                               required
+                        />
+                    </label>
+                    <label for="preorder-email">Email: 
+                        <input id="preorder-email" 
+                               name="preorder-email" 
+                               type="email" 
+                               placeholder="email"
+                               required
+                        />
+                    </label>
+                    <label for="preorder-phone">Ph. #: 
+                        <input id="preorder-phone" name="preorder-phone" type="tel" placeholder="(fyi... the author is chatty...) " />
+                    </label>
+                    <label for="preorder-cc">C.C. #: 
+                        <input id="preorder-cc" 
+                                name="preorder-cc" 
+                                type="password" 
+                                placeholder="you're giving your CC# to a 6 yr old?" 
+                            />
+                    </label>
+                        <fieldset id="cc-info">
+                            <label for="cc-exp-mo">Exp. Mo:
+                                <select id="cc-exp-mo">
+                                    <option value=""></option>
+                                    <option value="jan">01</option>
+                                    <option value="feb">02</option>
+                                    <option value="mar">03</option>
+                                    <option value="apr">04</option>
+                                    <option value="may">05</option>
+                                    <option value="jun">06</option>
+                                    <option value="jul">07</option>
+                                    <option value="aug">08</option>
+                                    <option value="sep">09</option>
+                                    <option value="oct">10</option>
+                                    <option value="nov">11</option>
+                                    <option value="dec">12</option>
+                                </select>
+                            </label>
+                        <label for="cc-exp-yr">Exp. Yr:
+                            <select id="cc-exp-yr">
+                                <option value=""></option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>             
+                        </label>
+                        </fieldset>
+
+                    <label for="preorder-button">
+                    <input id="preorder-button" name="preorder-button" type="submit" 
+                    value="Pre-order my copy today!" />
+                    </label>
+                    <span class="fine-print">
+                    *Taxes and other fees may apply.
+                    <br />
+                    Thank you for your pre-order, and for supporting a young author and her production team.  
+                    You will be notified by email once your new purchase becomes available.  
+                    </span>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
         <p>
             &#169; 2023-2024 The Angry Spider
         </p>
-    </div>
- 
+    </footer>
 </body>
 </html>

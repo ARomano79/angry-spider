@@ -5,18 +5,24 @@
     scroll-behavior: smoooth;
     font-family: 'Poppins', 'century gothic', sans-serif;
     font-size: 18px;
+    text-align: center;
 }
 
 :root {
     --main-bg-gradient: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
     --main-bg-solid-color: black;
-    --nav-footer-bg-color: black;
+    --nav-bg-color: black;
+    --footer-bg-color: black;
+
     --main-text-color: white;
+
     --h1-gradient: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));;
+    
     --link-default-color: aqua;
     --link-hover-color: rgb(236, 80, 168);
     --link-active-color: purple;
     --link-visited-color: darkturquoise;
+    
     --border-color: rgba(255, 255, 255, 0.4);
     --border-color-imgs: rgba(255, 255, 255, 0.8);
     --border-color-nav: rgba(255, 255, 255, 0.2);
@@ -24,86 +30,104 @@
 }
 
 
-/* Main Structural Divs/Styles */
+html, body, header, main, footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
 
 html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
     background: var(--main-bg-gradient);
     color: var(--main-text-color);
-    text-align: center;
 }
 
-#header {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+body {}
 
-#nav-bar {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: var(--nav-footer-bg-color);
+header {}
+
+    nav, #hero {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+main {}
+
+footer {
+    background-color: var(--footer-bg-color);
+    border-top: 1px solid var(--border-color-footer);
+}
+    footer p {
+        margin: 0 auto;
+        padding: 0.2rem;
+        font-style: italic;
+        font-size: 0.8rem;
+    }
+
+
+/* NAV BAR START */ 
+nav {
+    background-color: var(--nav-bg-color);
     border-bottom: 1px solid var(--border-color-nav);
 }
 
-#hero {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-#main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-#coming-soon-alert {
-    margin: 3.6rem auto;
-    padding: 0.2rem;
-    background-color: var(--main-bg-solid-color);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-#book-info {
+#nav-icon-dashboard {
     margin: 0 auto;
     padding: 0;
-}
-
-#book-info-liner {
-    margin: 3.2rem auto 1.6rem auto;
-    padding: 0.2rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#nav-icon-dashboard a {
+    /*  good size for fa icons ... save for now ...
+    width: 2.8rem;
+    height: 2.8rem;
+    */
+    margin: auto 1rem;
+    padding: 0.4rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    color: var(--main-text-color);
+    opacity: 90%;
+}
+
+    /* nav/menu button */
+
+    button {
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 1.2rem;
+        background-color: var(--link-default-color);
+        border-radius: 0.4rem;
+    }
+
+    a:hover button {
+        background-color: var(--link-hover-color);
+        cursor: pointer;
+    }
+
+/*  styles for fa icons ... save for now ...
+#nav-icon-dashboard i {
+    box-sizing: border-box;
+    margin: 0.2rem auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;   
-    object-fit: cover;
-    gap: 1.6rem;
+    font-size: 2rem;
 }
+*/
 
-#footer {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: var(--nav-footer-bg-color);
-    border-top: 1px solid var(--border-color-footer);
-}
+/* NAV BAR END */
 
 
-/* H1-6, Ps, associated classes */
-
+/* HERO Start */ 
 h1 {
     margin: 1rem auto;
     padding: 0.2rem;
@@ -111,7 +135,6 @@ h1 {
     background: var(--h1-gradient);
     background-clip: text;
     color: transparent;
-
 }
 
 .h1-pt1 {
@@ -138,75 +161,259 @@ h1 {
     letter-spacing: 0.1rem;
     line-height: 2.4rem;
 }
+/* HERO end */ 
 
-h2 {
-    margin: 0 auto;
-    padding: 0.2rem;
-    font-family: century;
-    font-size: 3.2rem;    
-    letter-spacing: 0.1rem;
-    line-height: 3.4rem;
+
+/* MAIN BODY STYLES */
+
+#coming-soon-alert {
+    margin: 3.6rem auto;
+    padding: 0;
+    background-color: var(--main-bg-solid-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
-p {
+        h2 {
+        margin: 0 auto;
+        padding: 0.2rem;
+        font-family: century;
+        font-size: 3.2rem;    
+        letter-spacing: 0.1rem;
+        line-height: 3.4rem;
+        }
+
+        .tagline {
+            margin: 0 auto 0.1rem auto;
+            padding: 0.2rem;
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.4rem;
+        }
+
+        .eta-date {
+            margin: 0.2rem auto;
+            padding: 0;
+            font-size: 1.6rem;
+            font-weight: 900;
+            line-height: 1.8rem;
+
+        }
+        
+        .smaller-italic {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+
+#book-info {
     margin: 0 auto;
     padding: 0;
-    text-shadow: 0.4rem 0.4rem 1.2rem var(--main-bg-solid-color);
 }
 
-.tagline,
-.preorder {
-    font-size: 1.4rem;
-    font-style: italic;
-    line-height: 1.6rem;
-}
+    #book-info-liner {
+        margin: 1.6rem auto;
+        padding: 0.2rem;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: start;
+        overflow: hidden;
+        flex-grow: 1;
+    }
 
-.eta-date {
-    padding: 0;
-    font-size: 1.6rem;
-    font-weight: 900;
-    line-height: 1.8rem;
-}
+        .book-qs {
+            margin: 1rem auto;
+            padding: 0;
+            width: 42rem;
+            height: auto;  
+        }
 
-.smaller-italic {
-    font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
+        h3 {
+            margin: 1rem auto;
+            padding: 0.6rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2rem;
+            text-shadow: 0.4rem 0.4rem 1.2rem var(--main-bg-solid-color);
+        }
 
-.book-desc {
-    margin: 0 auto;
-    padding: 0;    
-}
+        .desc {
+            margin: 0 auto;
+            padding: 0.4rem;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-weight: 300;
+            text-shadow: 0.4rem 0.4rem 1.2rem var(--main-bg-solid-color);
+        }
+        
 
-.desc-qs {
-    margin: 0.5rem auto;
-    padding: 0.4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2rem;
-}
+        /* email (updates) sign up form */ 
+        form.sign-up {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+        }
 
-.desc {
-    margin: auto 1rem;
-    padding: 0.4rem;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
+        .sign-up fieldset {
+            margin: 0 auto;
+            padding: 0.2rem;
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.6rem;
+            color: var(--link-default-color);
+            border: none;
 
-.preorder {
-    margin: 1rem auto;
-    padding: 0.4rem;
-    font-weight: 600;
-}
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-grow: 1;
+        }
 
-#footer p {
-    margin: 0 auto;
-    padding: 0.2rem;
-    font-style: italic;
-    font-size: 0.8rem;
-}
+        .sign-up label {
+            margin: 0 auto;
+            padding: 0.2rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2rem;
+            width: 100%;
+        }
 
+        .sign-up input {
+            margin: 0.1rem auto;
+            padding: 0.2rem;
+            border: 1px solid var(--link-default-color);
+            border-radius: 0.4rem;
+            font-size: 1.2rem;
+        }
+
+        #sign-up-button {
+            margin: 0.1rem auto;
+            padding: 0.1rem 0.4rem;
+            background-color: var(--link-default-color);
+            border: 2px solid var(--main-text-color);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #sign-up-button:hover {
+            margin: 0.1rem auto;
+            padding: 0.1rem 0.4rem;
+            background-color: var(--link-hover-color);
+            border: 2px solid var(--main-text-color);
+            font-weight: 600;
+        }
+
+
+        /* pre-order form */ 
+        form.preorder {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+        }
+
+        .preorder fieldset {
+            margin: 0 auto;
+            padding: 0.2rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 2rem;
+            color: var(--link-default-color);
+            text-transform: uppercase;
+            border: none;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+
+        .preorder label {
+            margin: 0 auto;
+            padding: 0.2rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2rem;
+            width: 90%;
+            font-size: 1rem;
+        }
+
+        .preorder input {
+            margin: 0.1rem auto;
+            padding: 0.2rem;
+            border: 1px solid var(--link-default-color);
+            border-radius: 0.4rem;
+            font-size: 1.2rem;
+            width: 80%;
+        }
+
+        .preorder input::placeholder {
+            font-size: 0.9rem;
+            line-height: 1.1rem;
+        }
+
+        .preorder .bold {
+            margin: 0 auto 0.2rem auto;
+            padding: 0.2rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .preorder #cc-info {
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+
+        .preorder #cc-info label {
+            margin: 0 auto;
+            padding: 0;
+            width: 48%;
+        }
+        
+
+        #preorder-button {
+            margin: 1rem auto 2rem auto;
+            padding: 0.2rem 0.4rem;
+            background-color: var(--link-default-color);
+            border: 2px solid var(--main-text-color);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #preorder-button:hover {
+            margin: 1rem auto 2rem auto;
+            padding: 0.2rem 0.4rem;
+            background-color: var(--link-hover-color);
+            border: 2px solid var(--main-text-color);
+            font-weight: 600;
+        }
+      
+
+        .fine-print {
+            font-size: 0.8rem;
+            margin: 0 auto 1rem auto;
+            padding: 0;
+            line-height: 1rem;
+            text-align: start;
+            width: 78%;
+        }
 
 /* images */
 
@@ -225,58 +432,9 @@ img {
     border: 2px solid var(--border-color-imgs);
     border-radius: 0.4rem;
     display: flex;
-    align-items: center;
-}
-
-
-/* nav/menu button */
-
-button {
-    font-size: 1.2rem;
-    background-color: var(--link-default-color);
-    border-radius: 0.4rem;
-}
-
-#nav-icon-dashboard {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    object-fit: cover;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#nav-icon-dashboard a {
-    /*  good size for fa icons ... save for now ...
-    width: 2.8rem;
-    height: 2.8rem;
-    */
-    margin: 0.5rem 1rem 0.5rem 0.1rem;
-    padding: 0.1rem;
-    text-decoration: none;
-    border: 2px solid var(--border-color);
-    border-radius: 0.4rem;
-    color: var(--main-text-color);
-    opacity: 90%;
-}
-
-#nav-icon-dashboard a:hover {
-    background-color: var(--link-hover-color);
-}
-
-/*  styles for fa icons ... save for now ...
-#nav-icon-dashboard i {
-    box-sizing: border-box;
-    margin: 0.2rem auto;
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
 }
-*/
 
 
 /* links */ 
