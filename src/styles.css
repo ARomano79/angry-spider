@@ -58,7 +58,7 @@ footer {
     background-color: var(--footer-bg-color);
     border-top: 1px solid var(--border-color-footer);
 }
-    footer p {
+    footer p, #current-year {
         margin: 0 auto;
         padding: 0.2rem;
         font-style: italic;
@@ -291,7 +291,8 @@ h1 {
             padding: 0.2rem;
             border: 1px solid var(--link-default-color);
             border-radius: 0.4rem;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
+            line-height: 1.1rem;
         }
 
         #sign-up-button {
@@ -455,5 +456,5 @@ a:active {
 }
 
 a:visited {
-    color: var(--link-visited-color);
+    /* color: var(--link-visited-color); */
 }

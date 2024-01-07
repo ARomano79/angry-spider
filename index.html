@@ -55,10 +55,10 @@
                 January 2024 <span class="smaller-italic">(or sometime soon...)</span>
             </p>
              <!-- use form bold to handle email alert -->
-            <form method="post" action="" class="sign-up">
+            <form enctype="multipart/form-data" method="post" action="https://formbold.com/s/6rYjK" class="sign-up">
                 <fieldset>Keep up with the Spider's latest antics!  
                     <label for="sign-up-form">
-                        <input id="sign-up-form" name="sign-up-form" type="email" placeholder="(this will really work soon)" />
+                        <input id="sign-up-form" name="sign-up-form" type="email" placeholder="please type your address in email pop-up" />
                         <input id="sign-up-button" name="sign-up-form" type="submit" 
                         value="Yes!!" />
                     </label>
@@ -160,8 +160,9 @@
     </main>
     <footer>
         <p>
-            &#169; 2023-2024 The Angry Spider
+            &#169; <span id="#current-year"></span> The Angry Spider
         </p>
     </footer>
+    <script src="./src/index.js"></script>
 </body>
 </html>
