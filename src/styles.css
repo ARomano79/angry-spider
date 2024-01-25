@@ -9,20 +9,60 @@
 }
 
 :root {
+
+    /*  Nos and old styles 
     --main-bg-gradient: linear-gradient(black, rgb(37, 37, 37), rgb(138, 137, 137));
+    --main-text-color: white;
+    --h1-gradient: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));
+    --theme-1-color-1: #BF2C38;
+    --theme-1-color-2: #F2A341;
+    --theme-1-color-3: #41A647;
+    --theme-1-color-4: #16778C;
+    --theme-1-color-5: #5E308C;
+    --theme-1-gradient-1: linear-gradient(to right, #BF2C38, #F2A341, #41A647, #16778C, #5E308C);
+    --theme-2-color-1: #F2059F;
+    --theme-2-color-2: #6E038C;
+    --theme-2-color-3: #05C7F2;
+    --theme-2-color-4: #6EBF34;
+    --theme-2-color-5: #F2B705;
+    --theme-2-gradient-1: linear-gradient(to right, #F2059F, #6E038C, #05C7F2, #6EBF34,  #F2B705);
+    --theme-3-color-1: #A61F12;
+    --theme-3-color-2: #F25E6B;
+    --theme-3-color-3: #F29BA2;
+    --theme-3-color-4: #89cad9;
+    --theme-3-color-5: #4bb3df;
+    --theme-3-color-6: #F2ECD8;
+    --theme-3-gradient-1: linear-gradient(to right, #A61F12, #F25E6B, #F29BA2, #89cad9, #4bb3df);
+
+*/
+
+
     --main-bg-solid-color: black;
     --nav-bg-color: black;
     --footer-bg-color: black;
-
-    --main-text-color: white;
-
-    --h1-gradient: linear-gradient(to right, rgb(255, 0, 72), orange, rgb(255, 242, 0), lime, rgb(69, 54, 237), rgb(100, 3, 185), rgb(241, 74, 224));;
     
+    --theme-4-color-1: #88F2E8;
+    --theme-4-color-2: #49D3F2;
+    --theme-4-color-3: #5A0273;
+    --theme-4-color-4: #D95B96;
+    --theme-4-color-5: #342840;
+    --theme-4-gradient-1: linear-gradient(to right, #88F2E8, #49D3F2, #5A0273, #D95B96);
+    --theme-4-bg-gradient: linear-gradient(#000000,#050406, #110d15, #211928, #342840);
+    --theme-4-text-color: white;
+    --theme-4-link-default: #49D3F2;
+    --theme-4-link-hover: #D95B96;
+    --theme-4-link-active: #88F2E8;
+    --theme-4-link-visited: #5A0273;
+
+
+/*
     --link-default-color: aqua;
     --link-hover-color: rgb(236, 80, 168);
     --link-active-color: purple;
     --link-visited-color: darkturquoise;
-    
+    */
+
+
     --border-color: rgba(255, 255, 255, 0.4);
     --border-color-imgs: rgba(255, 255, 255, 0.8);
     --border-color-nav: rgba(255, 255, 255, 0.2);
@@ -38,8 +78,8 @@ html, body, header, main, footer {
 }
 
 html {
-    background: var(--main-bg-gradient);
-    color: var(--main-text-color);
+    background: var(--theme-4-bg-gradient);
+    color: var(--theme-4-text-color);
 }
 
 body {}
@@ -94,7 +134,7 @@ nav {
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 0.4rem;
-    color: var(--main-text-color);
+    color: var(--theme-4-text-color);
     opacity: 90%;
 }
 
@@ -104,12 +144,12 @@ nav {
         margin: 0;
         padding: 0.2rem;
         font-size: 1.2rem;
-        background-color: var(--link-default-color);
+        background-color: var(--theme-4-link-default);
         border-radius: 0.4rem;
     }
 
     a:hover button {
-        background-color: var(--link-hover-color);
+        background-color: var(--theme-4-link-hover);
         cursor: pointer;
     }
 
@@ -132,7 +172,7 @@ h1 {
     margin: 1rem auto;
     padding: 0.2rem;
     font-family: 'Lilita One', century, serif;
-    background: var(--h1-gradient);
+    background: var(--theme-4-gradient-1);
     background-clip: text;
     color: transparent;
 }
@@ -198,7 +238,6 @@ h1 {
             font-size: 1.6rem;
             font-weight: 900;
             line-height: 1.8rem;
-
         }
         
         .smaller-italic {
@@ -206,7 +245,6 @@ h1 {
             font-size: 1.2rem;
             font-weight: 500;
         }
-
 
 #book-info {
     margin: 0 auto;
@@ -265,7 +303,7 @@ h1 {
             font-size: 1.1rem;
             font-weight: 300;
             line-height: 1.6rem;
-            color: var(--link-default-color);
+            color: var(--theme-4-link-default);
             border: none;
 
             display: flex;
@@ -289,7 +327,7 @@ h1 {
         .sign-up input {
             margin: 0.1rem auto;
             padding: 0.2rem;
-            border: 1px solid var(--link-default-color);
+            border: 1px solid var(--theme-4-link-default);
             border-radius: 0.4rem;
             font-size: 0.9rem;
             line-height: 1.1rem;
@@ -298,8 +336,8 @@ h1 {
         #sign-up-button {
             margin: 0.1rem auto;
             padding: 0.1rem 0.4rem;
-            background-color: var(--link-default-color);
-            border: 2px solid var(--main-text-color);
+            background-color: var(--theme-4-link-default);
+            border: 2px solid var(--theme-4-text-color);
             font-weight: 600;
             cursor: pointer;
         }
@@ -307,8 +345,8 @@ h1 {
         #sign-up-button:hover {
             margin: 0.1rem auto;
             padding: 0.1rem 0.4rem;
-            background-color: var(--link-hover-color);
-            border: 2px solid var(--main-text-color);
+            background-color: var(--theme-4-link-hover);
+            border: 2px solid var(--theme-4-text-color);
             font-weight: 600;
         }
 
@@ -326,7 +364,7 @@ h1 {
             font-size: 1.4rem;
             font-weight: 300;
             line-height: 2rem;
-            color: var(--link-default-color);
+            color: var(--theme-4-link-default);
             text-transform: uppercase;
             border: none;
 
@@ -352,7 +390,7 @@ h1 {
         .preorder input {
             margin: 0.1rem auto;
             padding: 0.2rem;
-            border: 1px solid var(--link-default-color);
+            border: 1px solid var(--theme-4-link-default);
             border-radius: 0.4rem;
             font-size: 1.2rem;
             width: 80%;
@@ -388,12 +426,11 @@ h1 {
             width: 48%;
         }
         
-
         #preorder-button {
             margin: 1rem auto 2rem auto;
             padding: 0.2rem 0.4rem;
-            background-color: var(--link-default-color);
-            border: 2px solid var(--main-text-color);
+            background-color: var(--theme-4-link-default);
+            border: 2px solid var(--theme-4-text-color);
             font-weight: 600;
             cursor: pointer;
         }
@@ -401,12 +438,11 @@ h1 {
         #preorder-button:hover {
             margin: 1rem auto 2rem auto;
             padding: 0.2rem 0.4rem;
-            background-color: var(--link-hover-color);
-            border: 2px solid var(--main-text-color);
+            background-color: var(--theme-4-link-hover);
+            border: 2px solid var(--theme-4-text-color);
             font-weight: 600;
         }
       
-
         .fine-print {
             font-size: 0.8rem;
             margin: 0 auto 1rem auto;
@@ -438,23 +474,28 @@ img {
 }
 
 
+.strike {
+    text-decoration: line-through;
+}
+
 /* links */ 
 
 a {
     text-decoration: none;
     font-size: 1.6rem;
     line-height: 2rem;
+    color: var(--theme-4-link-default);
 }
 
 a:hover {
-    color: var(--link-hover-color);
+    color: var(--theme-4-link-hover);
     text-decoration: none;
 }
 
 a:active {
-    color: var(--link-active-color);
+    color: var(--theme-4-link-active);
 }
 
 a:visited {
-    /* color: var(--link-visited-color); */
+    color: var(--theme-4-link-visited);
 }
